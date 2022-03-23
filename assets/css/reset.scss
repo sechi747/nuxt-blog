@@ -1,0 +1,127 @@
+@import "~@/assets/css/NotoSerifSC-Regular/font.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  /* 滚动条整体部分 */
+  width: 10px;
+  margin-right: 2px
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+  margin-bottom: 2px
+}
+
+::-webkit-scrollbar-track {
+  /* 外层轨道 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+  /*内层轨道，滚动条中间部分 */
+  background-color: #CBCBCB;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* 滑块 */
+  width: 10px;
+  border-radius: 5px;
+  background: #333;
+}
+
+::-webkit-scrollbar-corner {
+  /* 边角 */
+  width: 10px;
+  background-color: red;
+}
+
+::selection {
+  background: rgba(45, 170, 219, 0.3);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
+}
+
+* {
+  font-family: 'Noto Serif SC', serif;
+}
+
+body {
+  line-height: 1.8;
+  font-size: 17px;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+  word-break: break-all;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    color: #444;
+  }
+}
+
+button,
+input {
+  font: inherit;
+}
+
+:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+h2 {
+  color: #404040;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  border: none !important;
+  position: relative;
+  padding: 0 !important;
+  padding-left: 1rem !important;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 4px;
+  height: 36px;
+  background: #6e7173;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+h3 {
+  color: var(--color-main) !important;
+  font-weight: 500 !important;
+}
