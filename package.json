@@ -1,10 +1,10 @@
 {
-  "name": "blog",
+  "name": "nuxt-blog",
   "description": "My Blog.",
-  "author": "imhan0cn",
+  "author": "sechi",
   "version": "1.0.0",
-  "email": "shuxhan@163.com",
-  "url": "https:/imhan.cn/",
+  "email": "sechichen@gmail.com",
+  "url": "https://plantsechi.top/",
   "private": true,
   "config": {
     "nuxt": {
