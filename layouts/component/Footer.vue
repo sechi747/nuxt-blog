@@ -16,7 +16,7 @@
         <br />Powered by
         <a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a>
         &
-        <a href="https://github.com/anghunk/nuxt-blog">Github</a>
+        <a href="https://github.com/sechi747/nuxt-blog">Github</a>
         &
         <a href="/feed.xml" target="_blank">Rss</a>
       </div>
