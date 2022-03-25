@@ -38,7 +38,7 @@ export default {
       { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover' },
-      { hid: 'description', name: 'description', content: '这是我的个人博客，涉及一些技术笔记和个人碎碎念，使用nuxt.js搭建' }
+      { hid: 'description', name: 'description', content: '这是我的个人博客PlantSechi，涉及一些技术笔记和个人碎碎念，使用nuxt.js搭建' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
