@@ -1,7 +1,7 @@
 ---
 title: 从零开始在 Ubuntu 上部署 Nuxt 项目
 date: 2022/03/24 15:58:00
-updated: 2022/03/24 15:58:00
+updated: 2022/03/28 10:05:00
 categories:
 - 技术
 tags:
@@ -10,6 +10,8 @@ tags:
 ---
 
 ## 前置工作
+部署使用的 Ubuntu 版本：Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-96-generic x86_64)
+
 整个部署过程我都是使用 root 用户进行操作，所以不会有权限问题，但如果你是使用其他用户进行操作，则需要注意权限问题，适时给命令加上 `sudo` 前缀
 #### 安装 npm
 
@@ -25,7 +27,7 @@ tags:
 
 `n lts`  安装 node 的长期支持版
 
-`n 14.17.6` 安装特定版本的 node
+`n 14.17.6` 安装特定版本的 node（此处仅做演示，请根据实际需求安装特定的 node 版本）
 
 `n` 切换当前 node 版本，切换的同时 npm 版本也会改变。可以通过 `node -v` 查看当前 node 版本
 
@@ -70,6 +72,7 @@ User git
 然后再进行 `git` 操作就不会有问题了。造成这个现象的原因暂时不清楚，等有空再细查吧。
 
 #### 安装 Nginx
+此处安装的 Nginx 版本为：nginx/1.18.0 (Ubuntu)
 
 1. `apt install nginx` 安装 Nginx
 2. `service nginx start` 启动 Nginx
@@ -77,6 +80,8 @@ User git
 #### 安装 MySQL
 
 其实我的博客项目并不涉及数据库，但是为了熟悉 Linux 操作还是装上吧~
+
+此处安装的 MySQL 版本为：8.0.28-0ubuntu0.20.04.3 for Linux on x86_64 ((Ubuntu))
 
 1. `apt install mysql-server` 安装 MySQL
 2. `systemctl status mysql.service` 看一下有没有安装成功
@@ -90,6 +95,8 @@ User git
 #### 安装 Docker
 
 docker 肯定是会用到的，虽然我现在没用到~ 这里直接把官网的安装教程搬过来
+
+此处安装的 Docker 版本为：20.10.14, build a224086
 
 1.  安装一些必要的包
 
