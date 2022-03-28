@@ -7,6 +7,7 @@ categories:
 tags:
 - Linux
 - Nuxt
+- 网站部署
 ---
 
 ## 前置工作
