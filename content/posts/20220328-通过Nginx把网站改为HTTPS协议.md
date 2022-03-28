@@ -27,7 +27,7 @@ tags:
 
 ```bash
 upstream webserver {
-		server 10.0.20.5:7070;
+		server 127.0.0.1:7070;
 	}
 
 	server {
