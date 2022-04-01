@@ -63,7 +63,7 @@ and the repository exists
 
 进入到 `.ssh` 文件夹下，新建 `config` 文件（如果有就不用建了，直接修改就可以），添加以下配置：
 
-```bash
+```shell
 Host github.com
 Hostname ssh.github.com
 Port 443
@@ -111,7 +111,7 @@ docker 肯定是会用到的，虽然我现在没用到~ 这里直接把官网�
 
 3. 设置稳定版的 docker 仓库
 
-   ```bash
+   ```shell
    echo \
      "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
      $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
@@ -119,7 +119,7 @@ docker 肯定是会用到的，虽然我现在没用到~ 这里直接把官网�
 
 4. 安装 docker 引擎
 
-   ```bash
+   ```shell
    apt update
    apt install docker-ce docker-ce-cli containerd.io
    ```
@@ -130,7 +130,7 @@ docker 肯定是会用到的，虽然我现在没用到~ 这里直接把官网�
 
 6. 配置 docker 镜像加速源
 
-    ```bash
+    ```shell
     vim /etc/docker/daemon.json
     
     #在文件中添加以下内容
@@ -187,7 +187,7 @@ nuxt 官网提供了两种部署方式，一种是使用 `npm run build & npm ru
 
 1. 首先我们要通过 `git clone` 命令把项目放到服务器端
 
-   ```bash
+   ```shell
    #这里我选择在用户目录下新建一个 www 文件夹，并把项目放到里面，文件位置可以自行更改
    cd ~
    mkdir www
@@ -197,7 +197,7 @@ nuxt 官网提供了两种部署方式，一种是使用 `npm run build & npm ru
 
 2. 项目拉下来之后，需要使用 npm 安装依赖并打包
 
-   ```bash
+   ```shell
    cd nuxt-blog
    npm i
    npm run build
@@ -205,7 +205,7 @@ nuxt 官网提供了两种部署方式，一种是使用 `npm run build & npm ru
 
 3. 打包完成后，我们就可以使用 pm2 启动项目了
 
-   ```bash
+   ```shell
    pm2 start
    ```
 
@@ -218,7 +218,7 @@ nuxt 官网提供了两种部署方式，一种是使用 `npm run build & npm ru
 
 贴出我自己的配置供参考：
 
-```bash
+```shell
 user www-data;
 worker_processes auto;
 pid /run/nginx.pid;

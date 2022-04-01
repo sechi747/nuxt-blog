@@ -25,7 +25,7 @@ tags:
 
 进行完以上操作后，我们需要修改一下 Nginx 的配置，下面放出我的部分配置供参考：
 
-```bash
+```shell
 upstream webserver {
 		server 127.0.0.1:7070;
 	}
@@ -61,7 +61,7 @@ upstream webserver {
 
 完成以上配置就可以通过 https 协议访问网站啦~但是还是有一些地方不太完美，如果在浏览器依旧输入 http 协议的 URL，依旧会使用 http 协议，所以我们需要让网站的 http 请求自动重定向到 https，该功能同样可以通过 Nginx 实现，只需要再额外监听 80 端口就可以实现：
 
-```bash
+```shell
 	server {
     		listen 80;
     		server_name plantsechi.top; 
