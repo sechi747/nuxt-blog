@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{355:function(t,e){t.exports={attributes:{title:"Hello world.",date:"2022/03/23 10:50:00",updated:"2022/03/23 10:50:00",categories:["随笔"],tags:["起始"]},html:"<p>2022/03/23</p>\n<p>博客正式上线。<br>\n希望我能坚持下去。</p>\n"}}}]);

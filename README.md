@@ -5,8 +5,6 @@
 
 源码地址: [https://github.com/sechi747/nuxt-blog](https://github.com/sechi747/nuxt-blog)
 
-在线预览: [https://plantsechi.top](https://plantsechi.top)
-
 
 ## 1.介绍
 
