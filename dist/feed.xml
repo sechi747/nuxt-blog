@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>PlantSechi</title>
+        <link>https://plantsechi.top/feed.xml</link>
+        <description>这是我的个人博客，涉及一些技术笔记和个人碎碎念，使用nuxt.js搭建</description>
+        <lastBuildDate>Mon, 08 Aug 2022 12:22:32 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[关于 Vue3 中的 EffectScope]]></title>
+            <link>https://plantsechi.top/posts/20220807-关于Vue3中的EffectScope</link>
+            <guid>https://plantsechi.top/posts/20220807-关于Vue3中的EffectScope</guid>
+            <pubDate>Sun, 07 Aug 2022 16:08:32 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[关于我摆烂的这些日子]]></title>
+            <link>https://plantsechi.top/posts/20220502-关于我摆烂的这些日子</link>
+            <guid>https://plantsechi.top/posts/20220502-关于我摆烂的这些日子</guid>
+            <pubDate>Mon, 02 May 2022 15:44:44 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[在 Dart 中 final 和 const 的不同点]]></title>
+            <link>https://plantsechi.top/posts/20220418-dart中的final和const</link>
+            <guid>https://plantsechi.top/posts/20220418-dart中的final和const</guid>
+            <pubDate>Mon, 18 Apr 2022 15:01:40 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[执行上下文和执行栈]]></title>
+            <link>https://plantsechi.top/posts/20220414-执行上下文和执行栈</link>
+            <guid>https://plantsechi.top/posts/20220414-执行上下文和执行栈</guid>
+            <pubDate>Thu, 14 Apr 2022 09:31:40 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Windows 系统下搭建 Flutter 环境并运行 Flutter 项目]]></title>
+            <link>https://plantsechi.top/posts/20220412-Windows下Flutter环境搭建</link>
+            <guid>https://plantsechi.top/posts/20220412-Windows下Flutter环境搭建</guid>
+            <pubDate>Tue, 12 Apr 2022 06:12:40 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[读书笔记：《你不知道的 JavaScript》(1)]]></title>
+            <link>https://plantsechi.top/posts/20220411-《你不知道的JavaScript》(1)</link>
+            <guid>https://plantsechi.top/posts/20220411-《你不知道的JavaScript》(1)</guid>
+            <pubDate>Mon, 11 Apr 2022 03:30:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[记一次闲鱼翻车经历]]></title>
+            <link>https://plantsechi.top/posts/20220409-记一次闲鱼翻车经历</link>
+            <guid>https://plantsechi.top/posts/20220409-记一次闲鱼翻车经历</guid>
+            <pubDate>Sat, 09 Apr 2022 15:48:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[常见 ES6 语法的简单用法]]></title>
+            <link>https://plantsechi.top/posts/20220402-常见ES6语法简单用法</link>
+            <guid>https://plantsechi.top/posts/20220402-常见ES6语法简单用法</guid>
+            <pubDate>Sat, 02 Apr 2022 09:14:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[使用 Webhook 实现前端项目的自动化部署]]></title>
+            <link>https://plantsechi.top/posts/20220401-使用Webhook实现自动化部署</link>
+            <guid>https://plantsechi.top/posts/20220401-使用Webhook实现自动化部署</guid>
+            <pubDate>Fri, 01 Apr 2022 08:58:53 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[使用 PicGO + 腾讯云COS 搭建自己的图床]]></title>
+            <link>https://plantsechi.top/posts/20220331-使用PicGo搭建图床</link>
+            <guid>https://plantsechi.top/posts/20220331-使用PicGo搭建图床</guid>
+            <pubDate>Thu, 31 Mar 2022 13:28:56 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[通过 Nginx 把网站改为 HTTPS 协议]]></title>
+            <link>https://plantsechi.top/posts/20220328-通过Nginx把网站改为HTTPS协议</link>
+            <guid>https://plantsechi.top/posts/20220328-通过Nginx把网站改为HTTPS协议</guid>
+            <pubDate>Mon, 28 Mar 2022 02:58:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[从零开始在 Ubuntu 上部署 Nuxt 项目]]></title>
+            <link>https://plantsechi.top/posts/20220324-Ubuntu部署nuxt项目</link>
+            <guid>https://plantsechi.top/posts/20220324-Ubuntu部署nuxt项目</guid>
+            <pubDate>Thu, 24 Mar 2022 07:58:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hello world.]]></title>
+            <link>https://plantsechi.top/posts/20220323-hello-world</link>
+            <guid>https://plantsechi.top/posts/20220323-hello-world</guid>
+            <pubDate>Wed, 23 Mar 2022 02:50:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[22],{405:function(t,e){t.exports={attributes:{title:"留言",layout:"message"},html:"<p>一个留言板</p>\n"}}}]);

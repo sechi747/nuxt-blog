@@ -16,7 +16,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "export": "nuxt export",
-    "serve": "nuxt serve"
+    "serve": "nuxt serve",
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -32,6 +34,7 @@
   },
   "devDependencies": {
     "babel-plugin-transform-remove-console": "^6.9.4",
+    "cross-env": "^7.0.3",
     "github-markdown-css": "^4.0.0",
     "prism-themes": "^1.4.0",
     "sass": "^1.26.9",
