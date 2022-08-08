@@ -4,7 +4,7 @@
         <title>PlantSechi</title>
         <link>https://plantsechi.top/feed.xml</link>
         <description>这是我的个人博客，涉及一些技术笔记和个人碎碎念，使用nuxt.js搭建</description>
-        <lastBuildDate>Mon, 08 Aug 2022 12:28:47 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Aug 2022 12:37:06 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
