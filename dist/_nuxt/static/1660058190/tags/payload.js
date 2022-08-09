@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tags", (function(a){return {data:[{archives:a,keyword:a}],fetch:{"data-v-28ad35dd:0":{tags:["起始","Linux","Nuxt","网站部署","图床","Vanilla JS","生活","读书笔记","Flutter","Dart","强说愁","Vue"],archives:a,keyword:a}},mutations:a}}(void 0)));

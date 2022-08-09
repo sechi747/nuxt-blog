@@ -10,17 +10,10 @@ if (process.env.NODE_ENV === 'production') {
   remove_console.push("transform-remove-console")
 }
 
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-      router: {
-        base: '/nuxt-blog'
-      }
-    }
-    : {}
-
 export default {
-  ...routerBase,
+  router: {
+    base: '/nuxt-blog/'
+  },
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -137,7 +130,8 @@ export default {
       },
   ],
   generate: {
-    routes: dynamicMarkdownRoutes()
+    routes: dynamicMarkdownRoutes(),
+    subFolders: false
   },
   /*
   ** Build configuration

@@ -9,7 +9,7 @@ yarn-error.log*
 
 # output directory
 #dist
-#.nuxt
+.nuxt
 # Runtime data
 pids
 *.pid
