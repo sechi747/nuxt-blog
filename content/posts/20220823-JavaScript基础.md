@@ -1,7 +1,7 @@
 ---
 title: JavaScript基础
 date: 2022/08/23 23:41:08
-updated: 2022/08/23 23:41:08
+updated: 2022/08/24 22:57:15
 categories:
 - 技术
 tags:
@@ -187,4 +187,61 @@ alert( Symbol.keyFor(localSymbol) ); // undefined，非全局
 
 alert( localSymbol.description ); // name
 ```
+
+#### 数字类型转换
+
+`Math.floor`
+
+向下舍入：3.1 变成 3，-1.1 变成 -2。
+
+`Math.ceil`
+
+向上舍入：3.1 变成 4，-1.1 变成 -1。
+
+`Math.round`
+
+向最近的整数舍入：3.1 变成 3，3.6 变成 4，中间值 3.5 变成 4。
+
+`Math.trunc`
+
+移除小数点后的所有内容而没有舍入：3.1 变成 3，-1.1 变成 -1。
+
+`isNaN(value)` 
+
+将其参数转换为数字，然后测试它是否为 NaN
+
+`isFinite(value)` 
+
+将其参数转换为数字，如果是常规数字而不是 NaN/Infinity/-Infinity，则返回 true
+
+`Object.is`
+
+类似于 `===`， 但是更加严谨。`Object.is(NaN，NaN) === true`  `Object.is(0，-0) === false`
+
+`parseInt & parseFloat`
+
+从字符串中“读取”数字，直到无法读取为止。如果发生 error，则返回收集到的数字。
+
+```js
+alert( parseInt('100px') ); // 100
+alert( parseFloat('12.5em') ); // 12.5
+alert( parseInt('a123') ); // NaN，第一个符号停止了读取
+```
+
+#### 数组
+
+`Array.at`
+
+```js
+let fruits = ["Apple", "Orange", "Plum"];
+
+// 与 fruits[fruits.length-1] 相同
+alert( fruits.at(-1) ); // Plum
+```
+
+`push/pop` 方法运行的比较快，而 `shift/unshift` 比较慢。原因是 `shift/unshift` 需要遍历整个数组进行索引修改。
+
+`Array.split` 字符串 => 数组  `Array.join`  数组 => 字符串
+
+#### Iterable object（可迭代对象）
 
