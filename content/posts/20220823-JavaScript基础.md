@@ -1,7 +1,7 @@
 ---
 title: JavaScript基础
 date: 2022/08/23 23:41:08
-updated: 2022/08/24 22:57:15
+updated: 2022/09/08 17:30:15
 categories:
 - 技术
 tags:
@@ -72,6 +72,18 @@ if (!Math.trunc) { // 如果没有这个函数
 #### 垃圾回收
 
 垃圾回收的基本算法被称为 “mark-and-sweep”。
+
+```js
+let john = { name: "John" };
+
+let array = [ john ];
+
+john = null; // 覆盖引用
+
+// 前面由 john 所引用的那个对象被存储在了 array 中
+// 所以它不会被垃圾回收机制回收
+// 我们可以通过 array[0] 获取到它
+```
 
 定期执行以下“垃圾回收”步骤：
 
@@ -245,3 +257,101 @@ alert( fruits.at(-1) ); // Plum
 
 #### Iterable object（可迭代对象）
 
+#### Map & Set
+
+每一次 `map.set` 调用都会返回 map 本身，所以可以进行“链式”调用：
+
+```javascript
+map.set('1', 'str1')
+  .set(1, 'num1')
+  .set(true, 'bool1');
+```
+
+Map 迭代
+
+```javascript
+let recipeMap = new Map([
+  ['cucumber', 500],
+  ['tomatoes', 350],
+  ['onion',    50]
+]);
+
+// 遍历所有的键（vegetables）
+for (let vegetable of recipeMap.keys()) {
+  alert(vegetable); // cucumber, tomatoes, onion
+}
+
+// 遍历所有的值（amounts）
+for (let amount of recipeMap.values()) {
+  alert(amount); // 500, 350, 50
+}
+
+// 遍历所有的实体 [key, value]
+for (let entry of recipeMap) { // 与 recipeMap.entries() 相同
+  alert(entry); // cucumber,500 (and so on)
+}
+
+// 对每个键值对 (key, value) 运行 forEach 函数
+recipeMap.forEach( (value, key, map) => {
+  alert(`${key}: ${value}`); // cucumber: 500 etc
+});
+```
+
+`Object.entries` & `Object.fromEntries`
+
+```js
+let obj = {
+  name: "John",
+  age: 30
+};
+
+let map = new Map(Object.entries(obj));
+
+alert( map.get('name') ); // John
+/******************************************/
+let map = new Map();
+map.set('banana', 1);
+map.set('orange', 2);
+map.set('meat', 4);
+
+let obj = Object.fromEntries(map); // 创建一个普通对象（plain object）(*)
+
+alert(obj.orange); // 2
+```
+
+Set
+
+- `new Set(iterable)` —— 创建一个 `set`，如果提供了一个 `iterable` 对象（通常是数组），将会从数组里面复制值到 `set` 中。
+- `set.add(value)` —— 添加一个值，返回 set 本身
+- `set.delete(value)` —— 删除值，如果 `value` 在这个方法调用的时候存在则返回 `true` ，否则返回 `false`。
+- `set.has(value)` —— 如果 `value` 在 set 中，返回 `true`，否则返回 `false`。
+- `set.clear()` —— 清空 set。
+- `set.size` —— 返回元素个数。
+
+Set 迭代
+
+```js
+let set = new Set(["oranges", "apples", "bananas"]);
+
+for (let value of set) alert(value);
+
+// 与 forEach 相同：
+set.forEach((value, valueAgain, set) => {
+  alert(value);
+});
+```
+
+#### WeakMap & WeakSet
+
+`WeakMap` 的键必须是对象
+
+`WeakMap` 不支持迭代以及 `keys()`，`values()` 和 `entries()` 方法。所以没有办法获取 `WeakMap` 的所有键或值。
+
+`WeakMap` 只有以下的方法：
+
+- `weakMap.get(key)`
+- `weakMap.set(key, value)`
+- `weakMap.delete(key)`
+- `weakMap.has(key)`
+
+`WeakSet` 内只能添加对象。跟 `Set` 一样，`WeakSet` 支持 `add`，`has` 和 `delete` 方法，但不支持 `size` 和 `keys()`，并且不可迭代。
